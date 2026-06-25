@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aperture Photography — Portfólio Editorial</title>
+  
+  <!-- SEO Essencial -->
+  <meta name="description" content="Portfólio de fotografia editorial e fine art por Aperture. Ensaios pessoais, coberturas de casamentos e eventos corporativos de alta sofisticação.">
+  <meta name="keywords" content="fotografia, portfólio, fotógrafo profissional, fine art, casamento, ensaio pessoal, aperture, ninjacoder">
+  
+  <!-- Favicon (Câmera SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C5A880' stroke-width='2'><path d='M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z'/><circle cx='12' cy='13' r='4'/></svg>">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="home">
+
+  <!-- Navbar -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav-row">
+      <a href="#home" class="logo" aria-label="Aperture Home">
+        Aperture<span>.</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#portfolio" class="nav-link">Portfólio</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </div>
+      
+      <button class="nav-burger" id="navBurger" aria-label="Menu móvel" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="navMobile" role="dialog" aria-modal="true" aria-label="Menu móvel">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#portfolio" class="nav-link">Portfólio</a>
+    <a href="#servicos" class="nav-link">Serviços</a>
+    <a href="#contato" class="nav-link">Contato</a>
+  </div>
+
+  <!-- Hero Slideshow -->
+  <header class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1200&auto=format&fit=crop');"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop');"></div>
+      <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1504297050568-910d24c426d3?q=80&w=1200&auto=format&fit=crop');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <span class="hero-tag">Fotografia Editorial & Fine Art</span>
+      <h1 class="hero-title">Capturando a Essência do Tempo</h1>
+      <p class="hero-sub">Ensaios fotográficos e coberturas visuais premium para marcas, pessoas e momentos extraordinários.</p>
+      <a href="#portfolio" class="btn-accent">Ver Portfólio</a>
+    </div>
+  </header>
+
+  <!-- Seção Portfólio -->
+  <section class="container" id="portfolio">
+    <div class="section-header">
+      <span class="section-tag">Trabalhos</span>
+      <h2 class="section-title">Portfólio selecionado</h2>
+    </div>
+    
+    <!-- Filtros -->
+    <div class="gallery-filter" role="tablist" aria-label="Filtro de fotos">
+      <button class="filter-btn active" role="tab" aria-selected="true" data-filter="todos">Todos</button>
+      <button class="filter-btn" role="tab" aria-selected="false" data-filter="retrato">Retratos</button>
+      <button class="filter-btn" role="tab" aria-selected="false" data-filter="paisagem">Paisagens</button>
+      <button class="filter-btn" role="tab" aria-selected="false" data-filter="arquitetura">Arquitetura</button>
+      <button class="filter-btn" role="tab" aria-selected="false" data-filter="evento">Eventos</button>
+    </div>
+    
+    <!-- Grid Masonry -->
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Inserido dinamicamente via app.js -->
+    </div>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Valores</span>
+        <h2 class="section-title">Serviços & Pacotes</h2>
+      </div>
+      
+      <div class="pricing-grid">
+        <!-- Card 1 -->
+        <div class="pricing-card">
+          <div class="price-tag">Individual</div>
+          <h3 class="price-title">Ensaio Retrato</h3>
+          <div class="price-value">R$ 1.200 <span>/ ensaio</span></div>
+          <ul class="price-features">
+            <li>Sessão de 2 horas em estúdio ou locação</li>
+            <li>Direção de cena e poses profissional</li>
+            <li>25 fotos em alta resolução editadas</li>
+            <li>Entrega digital em até 7 dias</li>
+          </ul>
+          <a href="#contato" class="btn-accent" style="opacity: 1; transform: none; animation: none;">Reservar Data</a>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="pricing-card" style="border-color: var(--accent);">
+          <div class="price-tag">Casamentos</div>
+          <h3 class="price-title">Wedding Premium</h3>
+          <div class="price-value">R$ 5.900 <span>/ evento</span></div>
+          <ul class="price-features">
+            <li>Cobertura completa da cerimônia e festa</li>
+            <li>Pré-wedding incluso (ensaio casal)</li>
+            <li>120 fotos selecionadas e tratadas</li>
+            <li>Álbum impresso editorial de luxo</li>
+          </ul>
+          <a href="#contato" class="btn-accent" style="opacity: 1; transform: none; animation: none; background: var(--accent); color: #000;">Consultar Disponibilidade</a>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="pricing-card">
+          <div class="price-tag">Corporativo</div>
+          <h3 class="price-title">Editorial & Eventos</h3>
+          <div class="price-value">R$ 2.400 <span>/ diária</span></div>
+          <ul class="price-features">
+            <li>Cobertura fotográfica jornalística/editorial</li>
+            <li>Fotos corporativas de perfil para equipe</li>
+            <li>Entrega rápida de fotos editadas (48h)</li>
+            <li>Uso comercial e direitos de imagem liberados</li>
+          </ul>
+          <a href="#contato" class="btn-accent" style="opacity: 1; transform: none; animation: none;">Solicitar Proposta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section class="container" id="contato">
+    <div class="contact-layout">
+      <!-- Coluna Informações -->
+      <div class="contact-info-col">
+        <span class="section-tag">Contato</span>
+        <h3>Vamos criar algo espetacular juntos</h3>
+        <p>Preencha o formulário para verificar disponibilidade de datas, solicitar propostas para projetos especiais ou tirar qualquer dúvida.</p>
+        
+        <div class="info-list-item">
+          <div class="info-icon" aria-hidden="true">✉</div>
+          <div class="info-text">
+            <strong>E-mail</strong>
+            contato@aperture.com.br
+          </div>
+        </div>
+        
+        <div class="info-list-item">
+          <div class="info-icon" aria-hidden="true">📞</div>
+          <div class="info-text">
+            <strong>Telefone / WhatsApp</strong>
+            (11) 99876-5432
+          </div>
+        </div>
+        
+        <div class="info-list-item">
+          <div class="info-icon" aria-hidden="true">📍</div>
+          <div class="info-text">
+            <strong>Estúdio</strong>
+            Av. Paulista, 1000 — São Paulo, SP
+          </div>
+        </div>
+      </div>
+      
+      <!-- Coluna Formulário -->
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">E-mail de Contato</label>
+          <input type="email" id="email" required>
+        </div>
+        
+        <div class="form-group-full">
+          <label for="tipoServico">Tipo de Trabalho</label>
+          <select id="tipoServico" required>
+            <option value="">Selecione...</option>
+            <option value="retrato">Ensaio Retrato</option>
+            <option value="casamento">Casamento</option>
+            <option value="corporativo">Corporativo / Eventos</option>
+            <option value="outro">Outro Projeto Especial</option>
+          </select>
+        </div>
+        
+        <div class="form-group-full">
+          <label for="dataPreferencia">Data de Preferência</label>
+          <input type="date" id="dataPreferencia">
+        </div>
+        
+        <div class="form-group-full">
+          <label for="mensagem">Detalhes do Projeto</label>
+          <textarea id="mensagem" rows="5" placeholder="Conte-nos um pouco sobre a ideia..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn-accent form-group-full" style="opacity: 1; transform: none; animation: none; padding: 14px; text-align: center;">Enviar Solicitação</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()" role="dialog" aria-modal="true" aria-label="Visualizador de imagem">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fechar visualizador">&times;</button>
+      <button class="lightbox-nav-btn lightbox-prev" onclick="prevLightbox()" aria-label="Imagem anterior">&#8249;</button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+      <button class="lightbox-nav-btn lightbox-next" onclick="nextLightbox()" aria-label="Próxima imagem">&#8250;</button>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Booking Success Modal -->
+  <div class="success-modal" id="successModal" role="alertdialog" aria-modal="true" aria-labelledby="successTitle">
+    <div class="success-circle" aria-hidden="true">✔</div>
+    <h2 id="successTitle" style="font-size: 20px; font-weight: 300; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">Solicitação Enviada!</h2>
+    <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px;">
+      Obrigado pelo contato. Recebemos seu pedido de agendamento e retornaremos em até 24 horas úteis com uma proposta de orçamento.
+    </p>
+    <button class="btn-accent" style="opacity: 1; transform: none; animation: none; width: 100%;" onclick="closeSuccessModal()">Fechar</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Aperture &copy; 2026 — Desenvolvido por <span>NinjaCoder.com.br</span> como demonstração de portfólio.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
